@@ -266,23 +266,13 @@
                 }
             
                 .stacktable.large-only {
-                  display: table;
-                }
-            
-                .stacktable.small-only {
                   display: none;
                 }
             
-                @media (max-width: 800px) {
-                  .stacktable.large-only {
-                    display: none;
-                  }
-            
-                  .stacktable.small-only {
-                    display: table;
-                  }
+                .stacktable.small-only {
+                  display: table;
                 }
-            
+                        
                 .stacktable {
                   width: 100%;
                 }
@@ -300,10 +290,7 @@
               </style>
               <title>Report</title>
             </head>
-            
-            <body>
                 
-                  <html>
                     <body>
                       <table id="data-table" class="responsive-table responsive-table--stack responsive-table--small-screen">
                         <thead>
@@ -360,7 +347,6 @@
                         </tbody>
                       </table>
                     </body>
-                  </html>
                 
                 <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
                 integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
@@ -369,7 +355,6 @@
               <script>
                 $('table').stacktable();
               </script>
-            </body>
             
             </html>
             
