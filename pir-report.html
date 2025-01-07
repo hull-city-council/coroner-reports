@@ -266,11 +266,21 @@
                 }
             
                 .stacktable.large-only {
-                  display: none;
+                  display: table;
                 }
             
                 .stacktable.small-only {
-                  display: table;
+                  display: none;
+                }
+
+                @media (max-width: 800px) {
+                  .stacktable.large-only {
+                    display: none;
+                  }
+            
+                  .stacktable.small-only {
+                    display: table;
+                  }
                 }
                         
                 .stacktable {
@@ -295,15 +305,15 @@
                       <table id="data-table" class="responsive-table responsive-table--stack responsive-table--small-screen">
                         <thead>
                           <tr style="position: sticky;top: 0;">
-                            <th>Date due</th>
-                            <th>Start time</th>
-                            <th>Deceased</th>
-                            <th>Duration</th>
-                            <th>Jury case</th>
-                            <th>Date of death</th>
-                            <th>Age at death</th>
-                            <th>Coroner presiding</th>
-                            <th>Place Of Death</th>
+                            <th scope="col">Date due</th>
+                            <th scope="col">Start time</th>
+                            <th scope="col">Deceased</th>
+                            <th scope="col">Duration</th>
+                            <th scope="col">Jury case</th>
+                            <th scope="col">Date of death</th>
+                            <th scope="col">Age at death</th>
+                            <th scope="col">Coroner presiding</th>
+                            <th scope="col">Place Of Death</th>
                           </tr>
                         </thead>
                         <tbody>
