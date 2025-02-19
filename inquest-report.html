@@ -5,15 +5,14 @@
             <head>
               <meta charset="UTF-8">
               <meta name="viewport" content="width=device-width, initial-scale=1.0">
-              <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-              <link href="https://cdn.datatables.net/v/dt/jq-3.7.0/dt-2.2.2/b-3.2.2/b-print-3.2.2/r-3.0.4/datatables.min.css" rel="stylesheet" integrity="sha384-i/CRrA9RDTB/YghROQoW/dPFEh2ez75FKpuG49kLu9mVaTPeLxBelvLSkhSO3/P5" crossorigin="anonymous">
-              <script src="https://cdn.datatables.net/v/dt/jq-3.7.0/dt-2.2.2/b-3.2.2/b-print-3.2.2/r-3.0.4/datatables.min.js" integrity="sha384-dbXN9hA/5dUCONxp4ophyaYAwK6c4fdqmlbpL2WSDZtE7hRgNWPDGwUY0hj3NvBf" crossorigin="anonymous"></script>
+              <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+              <link href="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.2.2/r-3.0.4/datatables.min.css" rel="stylesheet" integrity="sha384-XtYbVlTRVS4Pb9ZFNG+LJabiuZxid1vhuNVqS5WWSUw4CyUBEmbGoD6p15xQ8wHc" crossorigin="anonymous">
               <title>Report</title>
             </head>
                 
-                    <body>
+                    <body class="container-fluid">
                       <table id="data-table" class="table">
-                        <thead class="thead-dark">
+                        <thead class="table-dark">
                           <tr style="position: sticky;top: 0;">
                             <th scope="col">Date due</th>
                             <th scope="col">Start time</th>
@@ -422,7 +421,10 @@
                         </tbody>
                       </table>
                     </body>
-                            
+                
+
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+              <script src="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.2.2/r-3.0.4/datatables.min.js" integrity="sha384-XSjHFSYaGwHl3qYWCkFWjyK0GzzHmo91V9nDdCAiJ02ZqN3LiZDE1Cb0i9gEZchw" crossorigin="anonymous"></script>
               <script>
                 new DataTable($('table'),{
                   responsive: true,
